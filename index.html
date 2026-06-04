@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prajeen S — Electronics and Communication Engineering Student, Full Stack Developer, and Problem Solver. Explore my projects, skills, and certifications." />
+  <meta name="keywords" content="Prajeen S, ECE Student, Full Stack Developer, MERN Stack, Portfolio" />
+  <meta property="og:title" content="Prajeen S | ECE Student & Full Stack Developer" />
+  <meta property="og:description" content="Personal portfolio of Prajeen S — ECE Student, Full Stack Developer, Problem Solver." />
+  <title>Prajeen S | ECE Student & Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ───────────────── NAVBAR ───────────────── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Prajeen S home">
+        <span class="logo-bracket">&lt;</span>Prajeen<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#coding" class="nav-link">Coding</a>
+        <a href="#certifications" class="nav-link">Certs</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <span class="theme-icon" id="theme-icon">🌙</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#education" class="mobile-link">Education</a>
+    <a href="#coding" class="mobile-link">Coding</a>
+    <a href="#certifications" class="mobile-link">Certifications</a>
+    <a href="#achievements" class="mobile-link">Achievements</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- ───────────────── HERO ───────────────── -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-noise"></div>
+
+      <div class="hero-container">
+        <div class="hero-content" data-animate="fade-left">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for Opportunities
+          </div>
+          <h1 class="hero-name">Prajeen S</h1>
+          <div class="hero-typewriter">
+            <span id="typewriter-text"></span><span class="cursor-blink">|</span>
+          </div>
+          <p class="hero-bio">
+            Electronics and Communication Engineering student at Sri Eshwar College of Engineering,
+            building full-stack web applications, embedded systems, and data-driven solutions.
+            Passionate about engineering clean code and solving complex problems.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary" id="view-projects-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+              View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="contact-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              Get in Touch
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/PRAJEENS2024" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" id="hero-github">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/prajeen-s/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" id="hero-linkedin">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://leetcode.com/u/PRAJEEN24/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LeetCode" id="hero-leetcode">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+            </a>
+            <a href="mailto:prajeensenthilkumar.24@gmail.com" class="social-icon" aria-label="Email" id="hero-email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap" data-animate="fade-right">
+          <div class="hero-image-ring"></div>
+          <div class="hero-image-ring hero-image-ring-2"></div>
+          <div class="hero-img-container">
+            <img src="assets/profile.jpg" alt="Prajeen S — ECE Student and Full Stack Developer" class="hero-img" id="hero-profile-img" />
+          </div>
+          <div class="hero-float-badge badge-top">
+            <span>🎓</span> B.E. ECE '28
+          </div>
+          <div class="hero-float-badge badge-bottom">
+            <span>⚡</span> MERN Stack
+          </div>
+          <div class="hero-float-badge badge-mid">
+            <span>🏆</span> 1955+ Problems
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── ABOUT ───────────────── -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Who I Am</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text" data-animate="fade-up">
+            <p>
+              I'm <strong>Prajeen S</strong>, a second-year Electronics and Communication Engineering student at
+              <strong>Sri Eshwar College of Engineering</strong>, driven by a passion for software engineering
+              and building meaningful products.
+            </p>
+            <p>
+              While my academic roots are in ECE, I've channeled my focus into <strong>full-stack web development</strong>,
+              working with the MERN stack to build production-ready applications. My experience spans
+              from embedded systems and autonomous robotics to analytics dashboards and cloud-deployed APIs.
+            </p>
+            <p>
+              I approach every challenge as a <strong>problem solver</strong> — dissecting requirements,
+              designing scalable architectures, and shipping clean, maintainable code. I'm actively
+              competitive on coding platforms, with 400+ problems solved on LeetCode and 1555+ on SkillRack.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-value">400+</span>
+                <span class="stat-label">LeetCode Problems</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">1555+</span>
+                <span class="stat-label">SkillRack Problems</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">4</span>
+                <span class="stat-label">Live Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">17+</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-highlights" data-animate="fade-up" style="--delay:0.15s">
+            <div class="highlight-card glass-card">
+              <div class="highlight-icon">💻</div>
+              <h3>Full Stack Development</h3>
+              <p>Building end-to-end applications with React, Node.js, Express, and MongoDB / PostgreSQL.</p>
+            </div>
+            <div class="highlight-card glass-card">
+              <div class="highlight-icon">🤖</div>
+              <h3>Embedded & Robotics</h3>
+              <p>Designing autonomous systems with Arduino, Raspberry Pi, ESP32, and LiDAR sensors.</p>
+            </div>
+            <div class="highlight-card glass-card">
+              <div class="highlight-icon">🧠</div>
+              <h3>Problem Solving</h3>
+              <p>Consistently practicing DSA across LeetCode, SkillRack, CodeChef, and GeeksforGeeks.</p>
+            </div>
+            <div class="highlight-card glass-card">
+              <div class="highlight-icon">📊</div>
+              <h3>Data & Analytics</h3>
+              <p>Working with Power BI, Matplotlib, and Django REST Framework for data-driven solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── SKILLS ───────────────── -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">What I Know</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+        </div>
+        <div class="skills-grid" data-animate="fade-up">
+
+          <div class="skill-category glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon-wrap">⌨️</div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon-wrap">🌐</div>
+              <h3>Web Technologies</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">JWT Auth</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon-wrap">⚛️</div>
+              <h3>Frameworks</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">Django REST</span>
+              <span class="skill-tag">PyQt5</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon-wrap">🗄️</div>
+              <h3>Databases</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon-wrap">📐</div>
+              <h3>Core Concepts</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">DSA</span>
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">DBMS</span>
+              <span class="skill-tag">System Design</span>
+              <span class="skill-tag">Linux</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon-wrap">🛠️</div>
+              <h3>Tools & Platforms</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">MATLAB</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon-wrap">🔧</div>
+              <h3>Embedded & Hardware</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Arduino</span>
+              <span class="skill-tag">Raspberry Pi</span>
+              <span class="skill-tag">ESP32</span>
+              <span class="skill-tag">LiDAR</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── EXPERIENCE ───────────────── -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Professional</span>
+          <h2 class="section-title">Internship Experience</h2>
+        </div>
+        <div class="experience-card glass-card" data-animate="fade-up">
+          <div class="exp-left">
+            <div class="exp-logo">AT</div>
+            <div class="exp-timeline-line"></div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">MERN Stack Intern</h3>
+                <span class="exp-company">AlgoTutor</span>
+              </div>
+              <span class="exp-duration">Dec 2025</span>
+            </div>
+            <ul class="exp-list">
+              <li>Built a subscription tracking web application using MongoDB, Express, React, and Node.js.</li>
+              <li>Integrated JWT-based authentication and secure REST APIs for protected routes.</li>
+              <li>Deployed the application and managed the complete development lifecycle from design to production.</li>
+            </ul>
+            <div class="exp-tech">
+              <span class="tech-chip">MongoDB</span>
+              <span class="tech-chip">Express.js</span>
+              <span class="tech-chip">React</span>
+              <span class="tech-chip">Node.js</span>
+              <span class="tech-chip">JWT</span>
+              <span class="tech-chip">REST API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── PROJECTS ───────────────── -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">What I've Built</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card glass-card" data-animate="fade-up" id="project-rover">
+            <div class="project-card-top">
+              <div class="project-num">01</div>
+              <span class="project-badge badge-hw">Hardware</span>
+            </div>
+            <h3 class="project-title">Autonomous Rover: Smart Sand Excavator</h3>
+            <span class="project-duration">Jan 2026</span>
+            <p class="project-desc">
+              Engineered an autonomous rover for real-time terrain mapping, obstacle detection,
+              and dynamic path-planning, integrating LiDAR with onboard compute.
+            </p>
+            <ul class="project-points">
+              <li>Arduino Uno R4, Raspberry Pi 5, ESP32 & LiDAR integration</li>
+              <li>Real-time terrain mapping and obstacle detection</li>
+              <li>Dynamic path-planning and rerouting algorithms</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-chip chip-accent">Arduino Uno R4</span>
+              <span class="tech-chip chip-accent">Raspberry Pi 5</span>
+              <span class="tech-chip chip-accent">ESP32</span>
+              <span class="tech-chip chip-accent">LiDAR</span>
+            </div>
+          </article>
+
+          <article class="project-card glass-card" data-animate="fade-up" style="--delay:0.1s" id="project-warehouse">
+            <div class="project-card-top">
+              <div class="project-num">02</div>
+              <span class="project-badge badge-web">Full Stack</span>
+            </div>
+            <h3 class="project-title">Warehouse Automation & Order Fulfillment Tracker</h3>
+            <span class="project-duration">Oct 2025</span>
+            <p class="project-desc">
+              Full-stack inventory platform with secure REST APIs for order booking, inventory
+              tracking, and optimized client-server architecture.
+            </p>
+            <ul class="project-points">
+              <li>React + Node.js + Express + MongoDB stack</li>
+              <li>Secure REST APIs for order booking and inventory tracking</li>
+              <li>Optimized workflow efficiency through architecture design</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-chip chip-accent">React</span>
+              <span class="tech-chip chip-accent">Node.js</span>
+              <span class="tech-chip chip-accent">Express</span>
+              <span class="tech-chip chip-accent">MongoDB</span>
+            </div>
+          </article>
+
+          <article class="project-card glass-card" data-animate="fade-up" style="--delay:0.2s" id="project-chemsight">
+            <div class="project-card-top">
+              <div class="project-num">03</div>
+              <span class="project-badge badge-data">Analytics</span>
+            </div>
+            <h3 class="project-title">ChemSight — Hybrid Chemical Analytics Platform</h3>
+            <span class="project-duration">Nov 2025</span>
+            <p class="project-desc">
+              Hybrid analytics platform combining a React web dashboard and PyQt5 desktop application
+              with Django REST backend, sensor synchronization and anomaly detection.
+            </p>
+            <ul class="project-points">
+              <li>React dashboard + PyQt5 desktop application</li>
+              <li>Django REST backend with PostgreSQL</li>
+              <li>Sensor synchronization, anomaly detection & report generation</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-chip chip-accent">React</span>
+              <span class="tech-chip chip-accent">PyQt5</span>
+              <span class="tech-chip chip-accent">Django REST</span>
+              <span class="tech-chip chip-accent">PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="project-card glass-card" data-animate="fade-up" style="--delay:0.3s" id="project-econexus">
+            <div class="project-card-top">
+              <div class="project-num">04</div>
+              <span class="project-badge badge-live">In Progress</span>
+            </div>
+            <h3 class="project-title">Eco Nexus</h3>
+            <span class="project-duration">Nov 2025 – Present</span>
+            <p class="project-desc">
+              Python-based B2B resource-sharing platform with SQL-driven workflows and modular backend
+              architecture for secure asset matching and transaction logging.
+            </p>
+            <ul class="project-points">
+              <li>Python-based B2B resource-sharing platform</li>
+              <li>SQL-driven workflows for asset management</li>
+              <li>Modular backend for secure asset matching & transaction logging</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-chip chip-accent">Python</span>
+              <span class="tech-chip chip-accent">SQL</span>
+              <span class="tech-chip chip-accent">Backend Architecture</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── EDUCATION ───────────────── -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="timeline" data-animate="fade-up">
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-card glass-card" id="edu-sece">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">B.E. Electronics and Communication Engineering</h3>
+                  <span class="timeline-org">Sri Eshwar College of Engineering</span>
+                </div>
+                <span class="timeline-year">2024 – 2028</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="meta-chip">CGPA: 8.12 <small>(Till 3rd Sem)</small></span>
+                <span class="meta-chip meta-chip-active">Pursuing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-card glass-card" id="edu-hse">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Higher Secondary Education (HSE)</h3>
+                  <span class="timeline-org">Don Bosco Higher Secondary School</span>
+                </div>
+                <span class="timeline-year">2023 – 2024</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="meta-chip">Score: 80.33%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-card glass-card" id="edu-sslc">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">SSLC</h3>
+                  <span class="timeline-org">Don Bosco Higher Secondary School</span>
+                </div>
+                <span class="timeline-year">2021 – 2022</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="meta-chip">Score: 89.00%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── CODING PROFILES ───────────────── -->
+    <section class="section section-alt" id="coding">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Competitive Programming</span>
+          <h2 class="section-title">Coding Profiles</h2>
+        </div>
+        <div class="coding-grid" data-animate="fade-up">
+
+          <div class="coding-card glass-card" id="coding-leetcode">
+            <div class="coding-card-top">
+              <div class="coding-logo leetcode-logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+              </div>
+              <div class="coding-header-info">
+                <h3 class="coding-platform">LeetCode</h3>
+                <span class="coding-handle">PRAJEEN24</span>
+              </div>
+            </div>
+            <div class="coding-stats">
+              <div class="c-stat">
+                <span class="c-val">400+</span>
+                <span class="c-lbl">Problems Solved</span>
+              </div>
+              <div class="c-stat">
+                <span class="c-val">53</span>
+                <span class="c-lbl">Contests</span>
+              </div>
+              <div class="c-stat">
+                <span class="c-val">1598</span>
+                <span class="c-lbl">Max Rating</span>
+              </div>
+            </div>
+            <a href="https://leetcode.com/u/PRAJEEN24/" target="_blank" rel="noopener noreferrer" class="coding-link">
+              View Profile <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+
+          <div class="coding-card glass-card" id="coding-skillrack">
+            <div class="coding-card-top">
+              <div class="coding-logo skillrack-logo">SR</div>
+              <div class="coding-header-info">
+                <h3 class="coding-platform">SkillRack</h3>
+                <span class="coding-handle">Prajeen S</span>
+              </div>
+            </div>
+            <div class="coding-stats">
+              <div class="c-stat">
+                <span class="c-val">1555+</span>
+                <span class="c-lbl">Problems Solved</span>
+              </div>
+              <div class="c-stat">
+                <span class="c-val">17</span>
+                <span class="c-lbl">Certificates</span>
+              </div>
+              <div class="c-stat">
+                <span class="c-val">525+</span>
+                <span class="c-lbl">Bronze Medals</span>
+              </div>
+            </div>
+            <a href="https://www.skillrack.com/faces/resume.xhtml?id=515303&key=3742f907d9a4a34167e0c70e8dfe04481e54470b" target="_blank" rel="noopener noreferrer" class="coding-link">
+              View Profile <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+
+          <div class="coding-card glass-card" id="coding-codechef">
+            <div class="coding-card-top">
+              <div class="coding-logo codechef-logo">CC</div>
+              <div class="coding-header-info">
+                <h3 class="coding-platform">CodeChef</h3>
+                <span class="coding-handle">prajeens</span>
+              </div>
+            </div>
+            <div class="coding-stats">
+              <div class="c-stat">
+                <span class="c-val">500+</span>
+                <span class="c-lbl">Problems Solved</span>
+              </div>
+              <div class="c-stat">
+                <span class="c-val">14</span>
+                <span class="c-lbl">Contests</span>
+              </div>
+              <div class="c-stat">
+                <span class="c-val">1083</span>
+                <span class="c-lbl">Max Rating</span>
+              </div>
+            </div>
+            <a href="https://www.codechef.com/users/prajeens" target="_blank" rel="noopener noreferrer" class="coding-link">
+              View Profile <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+
+          <div class="coding-card glass-card" id="coding-gfg">
+            <div class="coding-card-top">
+              <div class="coding-logo gfg-logo">GG</div>
+              <div class="coding-header-info">
+                <h3 class="coding-platform">GeeksforGeeks</h3>
+                <span class="coding-handle">prajeensenti9s7</span>
+              </div>
+            </div>
+            <div class="coding-stats">
+              <div class="c-stat">
+                <span class="c-val">100+</span>
+                <span class="c-lbl">Problems Solved</span>
+              </div>
+              <div class="c-stat">
+                <span class="c-val">177</span>
+                <span class="c-lbl">Institute Rank</span>
+              </div>
+            </div>
+            <a href="https://www.geeksforgeeks.org/profile/prajeensenti9s7" target="_blank" rel="noopener noreferrer" class="coding-link">
+              View Profile <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+
+          <div class="coding-card glass-card" id="coding-hackerrank">
+            <div class="coding-card-top">
+              <div class="coding-logo hackerrank-logo">HR</div>
+              <div class="coding-header-info">
+                <h3 class="coding-platform">HackerRank</h3>
+                <span class="coding-handle">prajeensenthilk1</span>
+              </div>
+            </div>
+            <div class="coding-stats">
+              <div class="c-stat">
+                <span class="c-val">✔</span>
+                <span class="c-lbl">SQL Certified</span>
+              </div>
+              <div class="c-stat">
+                <span class="c-val">✔</span>
+                <span class="c-lbl">Java Certified</span>
+              </div>
+            </div>
+            <a href="https://www.hackerrank.com/profile/prajeensenthilk1" target="_blank" rel="noopener noreferrer" class="coding-link">
+              View Profile <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── CERTIFICATIONS ───────────────── -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="cert-filters" data-animate="fade-up">
+          <button class="cert-filter-btn active" data-filter="all">All</button>
+          <button class="cert-filter-btn" data-filter="nptel">NPTEL</button>
+          <button class="cert-filter-btn" data-filter="oracle">Oracle</button>
+          <button class="cert-filter-btn" data-filter="redhat">Red Hat</button>
+          <button class="cert-filter-btn" data-filter="udemy">Udemy</button>
+          <button class="cert-filter-btn" data-filter="other">Others</button>
+        </div>
+
+        <div class="cert-grid" data-animate="fade-up">
+
+          <!-- NPTEL -->
+          <div class="cert-card glass-card" data-category="nptel" id="cert-design-thinking">
+            <div class="cert-issuer-badge nptel-badge">NPTEL</div>
+            <div class="cert-icon-large">🏅</div>
+            <div class="cert-body">
+              <h3>Design Thinking – A Primer</h3>
+              <div class="cert-meta">
+                <span class="cert-badge cert-elite">Elite-Silver</span>
+                <span class="cert-year">2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" data-category="nptel" id="cert-iot">
+            <div class="cert-issuer-badge nptel-badge">NPTEL</div>
+            <div class="cert-icon-large">🏅</div>
+            <div class="cert-body">
+              <h3>Introduction to Internet of Things</h3>
+              <div class="cert-meta">
+                <span class="cert-badge cert-elite">Elite-Silver</span>
+                <span class="cert-year">2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Oracle -->
+          <div class="cert-card glass-card" data-category="oracle" id="cert-oracle-java">
+            <div class="cert-issuer-badge oracle-badge">Oracle</div>
+            <div class="cert-icon-large">☕</div>
+            <div class="cert-body">
+              <h3>Java Foundations</h3>
+              <div class="cert-meta">
+                <span class="cert-badge cert-verified">Award of Completion</span>
+                <span class="cert-year">2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" data-category="oracle" id="cert-oracle-badge">
+            <div class="cert-issuer-badge oracle-badge">Oracle</div>
+            <div class="cert-icon-large">🔴</div>
+            <div class="cert-body">
+              <h3>Oracle Java Badge</h3>
+              <div class="cert-meta">
+                <span class="cert-badge cert-verified">Digital Badge</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Red Hat -->
+          <div class="cert-card glass-card" data-category="redhat" id="cert-redhat-linux">
+            <div class="cert-issuer-badge redhat-badge">Red Hat</div>
+            <div class="cert-icon-large">🐧</div>
+            <div class="cert-body">
+              <h3>Getting Started with Linux Fundamentals</h3>
+              <div class="cert-meta">
+                <span class="cert-badge cert-verified">Red Hat Academy</span>
+                <span class="cert-year">2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" data-category="redhat" id="cert-redhat-sysadmin">
+            <div class="cert-issuer-badge redhat-badge">Red Hat</div>
+            <div class="cert-icon-large">⚙️</div>
+            <div class="cert-body">
+              <h3>Red Hat System Administration I (RH124)</h3>
+              <div class="cert-meta">
+                <span class="cert-badge cert-verified">Red Hat Academy</span>
+                <span class="cert-year">2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Udemy -->
+          <div class="cert-card glass-card" data-category="udemy" id="cert-mern">
+            <div class="cert-issuer-badge codegalatta-badge">Code Galatta</div>
+            <div class="cert-icon-large">📜</div>
+            <div class="cert-body">
+              <h3>MERN Stack Full Stack Development</h3>
+              <div class="cert-meta">
+                <span class="cert-year">2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" data-category="udemy" id="cert-sql">
+            <div class="cert-issuer-badge udemy-badge">Udemy</div>
+            <div class="cert-icon-large">🗄️</div>
+            <div class="cert-body">
+              <h3>SQL for Beginners</h3>
+              <div class="cert-meta">
+                <span class="cert-year">2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" data-category="udemy" id="cert-dsa">
+            <div class="cert-issuer-badge udemy-badge">Udemy</div>
+            <div class="cert-icon-large">🧮</div>
+            <div class="cert-body">
+              <h3>Mastering DSA using C & C++</h3>
+              <div class="cert-meta">
+                <span class="cert-year">2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Others -->
+          <div class="cert-card glass-card" data-category="other" id="cert-basics">
+            <div class="cert-issuer-badge codegalatta-badge">Code Galatta</div>
+            <div class="cert-icon-large">📜</div>
+            <div class="cert-body">
+              <h3>Basics of C, C++, Java and Python</h3>
+              <div class="cert-meta">
+                <span class="cert-year">2024</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" data-category="other" id="cert-ml-python">
+            <div class="cert-issuer-badge fossee-badge">FOSSEE IIT</div>
+            <div class="cert-icon-large">🤖</div>
+            <div class="cert-body">
+              <h3>Machine Learning Using Python</h3>
+              <div class="cert-meta">
+                <span class="cert-badge cert-verified">FOSSEE, IIT Bombay</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" data-category="other" id="cert-matlab">
+            <div class="cert-issuer-badge fossee-badge">FOSSEE IIT</div>
+            <div class="cert-icon-large">📊</div>
+            <div class="cert-body">
+              <h3>Introduction to MATLAB & SIMULINK</h3>
+              <div class="cert-meta">
+                <span class="cert-badge cert-verified">FOSSEE, IIT Bombay</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" data-category="other" id="cert-embedded">
+            <div class="cert-issuer-badge fossee-badge">FOSSEE IIT</div>
+            <div class="cert-icon-large">🔌</div>
+            <div class="cert-body">
+              <h3>Embedded for Beginners</h3>
+              <div class="cert-meta">
+                <span class="cert-badge cert-verified">FOSSEE, IIT Bombay</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" data-category="other" id="cert-iit-c">
+            <div class="cert-issuer-badge iit-badge">IIT Bombay</div>
+            <div class="cert-icon-large">⌨️</div>
+            <div class="cert-body">
+              <h3>C Programming Training</h3>
+              <div class="cert-meta">
+                <span class="cert-badge cert-verified">IIT Bombay</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" data-category="other" id="cert-iit-cpp">
+            <div class="cert-issuer-badge iit-badge">IIT Bombay</div>
+            <div class="cert-icon-large">⌨️</div>
+            <div class="cert-body">
+              <h3>C++ Programming Training</h3>
+              <div class="cert-meta">
+                <span class="cert-badge cert-verified">IIT Bombay</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" data-category="other" id="cert-powerbi">
+            <div class="cert-issuer-badge other-badge">Microsoft</div>
+            <div class="cert-icon-large">📈</div>
+            <div class="cert-body">
+              <h3>Power BI Office Master</h3>
+              <div class="cert-meta">
+                <span class="cert-badge cert-verified">Completed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" data-category="other" id="cert-gemini">
+            <div class="cert-issuer-badge google-badge">Google</div>
+            <div class="cert-icon-large">✨</div>
+            <div class="cert-body">
+              <h3>Gemini Certified Student</h3>
+              <div class="cert-meta">
+                <span class="cert-badge cert-verified">Google</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card" data-category="other" id="cert-linkedin-electronics">
+            <div class="cert-issuer-badge linkedin-badge">LinkedIn</div>
+            <div class="cert-icon-large">🔋</div>
+            <div class="cert-body">
+              <h3>Electronics Foundations</h3>
+              <div class="cert-meta">
+                <span class="cert-badge cert-verified">LinkedIn Learning</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── ACHIEVEMENTS ───────────────── -->
+    <section class="section section-alt" id="achievements">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Recognition</span>
+          <h2 class="section-title">Achievements</h2>
+        </div>
+        <div class="achievements-list" data-animate="fade-up">
+
+          <div class="achievement-item glass-card" id="ach-mini-expo">
+            <div class="ach-icon">🥉</div>
+            <div class="ach-content">
+              <h3>Third Prize — Mini Project Expo 2026</h3>
+              <p>Awarded third place at the college Mini Project Expo for outstanding project demonstration.</p>
+            </div>
+            <span class="ach-year">2026</span>
+          </div>
+
+          <div class="achievement-item glass-card" id="ach-caterpillar">
+            <div class="ach-icon">🏆</div>
+            <div class="ach-content">
+              <h3>Semi-Finals — Caterpillar Autonomy Challenge</h3>
+              <p>Shortlisted for the semi-finals in Caterpillar's prestigious autonomy challenge, two consecutive years.</p>
+            </div>
+            <span class="ach-year">2024 & 2025</span>
+          </div>
+
+          <div class="achievement-item glass-card" id="ach-freshathon">
+            <div class="ach-icon">🥈</div>
+            <div class="ach-content">
+              <h3>2nd Runner Up — Freshathon 2025</h3>
+              <p>Secured 2nd Runner Up position at Freshathon 2025 hackathon.</p>
+            </div>
+            <span class="ach-year">2025</span>
+          </div>
+
+          <div class="achievement-item glass-card" id="ach-sicpc">
+            <div class="ach-icon">🏅</div>
+            <div class="ach-content">
+              <h3>Shortlisted — SICPC Continental Round 2025</h3>
+              <p>Selected for the continental round of the SICPC competitive programming contest.</p>
+            </div>
+            <span class="ach-year">2025</span>
+          </div>
+
+          <div class="achievement-item glass-card" id="ach-sap">
+            <div class="ach-icon">🏅</div>
+            <div class="ach-content">
+              <h3>Shortlisted — SAP Hackfest Regional Round 2025</h3>
+              <p>Shortlisted for the regional round of SAP Hackfest 2025.</p>
+            </div>
+            <span class="ach-year">2025</span>
+          </div>
+
+          <div class="achievement-item glass-card" id="ach-tata">
+            <div class="ach-icon">🎯</div>
+            <div class="ach-content">
+              <h3>Tata Crucible Campus Quiz</h3>
+              <p>Participated and performed in Tata Crucible, one of India's largest business quiz competitions.</p>
+            </div>
+            <span class="ach-year">2025</span>
+          </div>
+
+          <div class="achievement-item glass-card" id="ach-adobe">
+            <div class="ach-icon">🎨</div>
+            <div class="ach-content">
+              <h3>Adobe India Hackathon</h3>
+              <p>Participated in Adobe India Hackathon, solving creative and technical challenges.</p>
+            </div>
+            <span class="ach-year">2025</span>
+          </div>
+
+          <div class="achievement-item glass-card" id="ach-hp">
+            <div class="ach-icon">💡</div>
+            <div class="ach-content">
+              <h3>HP Power Lab 2.0</h3>
+              <p>Selected for HP Power Lab 2.0 — an intensive tech innovation program by HP India.</p>
+            </div>
+            <span class="ach-year">2025</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── CONTACT ───────────────── -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">I'm open to internship opportunities, collaborative projects, and interesting conversations. Drop a message!</p>
+        </div>
+        <div class="contact-grid" data-animate="fade-up">
+          <a href="mailto:prajeensenthilkumar.24@gmail.com" class="contact-card glass-card" id="contact-email">
+            <div class="contact-icon-wrap">
+              <div class="contact-icon">📧</div>
+            </div>
+            <h3>Email</h3>
+            <span>prajeensenthilkumar.24@gmail.com</span>
+            <div class="contact-arrow">→</div>
+          </a>
+          <a href="tel:+918807951717" class="contact-card glass-card" id="contact-phone">
+            <div class="contact-icon-wrap">
+              <div class="contact-icon">📞</div>
+            </div>
+            <h3>Phone</h3>
+            <span>+91 8807951717</span>
+            <div class="contact-arrow">→</div>
+          </a>
+          <a href="https://www.linkedin.com/in/prajeen-s/" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" id="contact-linkedin">
+            <div class="contact-icon-wrap">
+              <div class="contact-icon">💼</div>
+            </div>
+            <h3>LinkedIn</h3>
+            <span>prajeen-s</span>
+            <div class="contact-arrow">→</div>
+          </a>
+          <a href="https://github.com/PRAJEENS2024" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" id="contact-github">
+            <div class="contact-icon-wrap">
+              <div class="contact-icon">🐙</div>
+            </div>
+            <h3>GitHub</h3>
+            <span>PRAJEENS2024</span>
+            <div class="contact-arrow">→</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ───────────────── FOOTER ───────────────── -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="logo-bracket">&lt;</span>Prajeen<span class="logo-bracket">/&gt;</span>
+        <p>ECE Student · Full Stack Developer · Problem Solver</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/PRAJEENS2024" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer-social-link" id="footer-github">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/prajeen-s/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-link" id="footer-linkedin">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:prajeensenthilkumar.24@gmail.com" aria-label="Email" class="footer-social-link" id="footer-email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 Prajeen S. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
