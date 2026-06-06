@@ -9,12 +9,19 @@
 (function initTheme() {
   const root  = document.documentElement;
   const btn   = document.getElementById('theme-toggle');
-  const icon  = document.getElementById('theme-icon');
+  const iconMoon = document.getElementById('icon-moon');
+  const iconSun  = document.getElementById('icon-sun');
   const saved = localStorage.getItem('ps-theme') || 'dark';
 
   const apply = (theme) => {
     root.setAttribute('data-theme', theme);
-    icon.textContent = theme === 'dark' ? '🌙' : '☀️';
+    if (theme === 'dark') {
+      if (iconMoon) iconMoon.style.display = 'block';
+      if (iconSun) iconSun.style.display = 'none';
+    } else {
+      if (iconMoon) iconMoon.style.display = 'none';
+      if (iconSun) iconSun.style.display = 'block';
+    }
     localStorage.setItem('ps-theme', theme);
   };
 
@@ -357,4 +364,21 @@ function animateCounter(el) {
   }, { rootMargin: '-30% 0px -60% 0px' });
 
   sections.forEach(sec => observer.observe(sec));
+})();
+
+/* ─── Coding Profiles Expand/Collapse Toggle ─── */
+(function initCodingDetailsToggle() {
+  const cards = document.querySelectorAll('.cp-card');
+  cards.forEach(card => {
+    const btn = card.querySelector('.cp-toggle-btn');
+    if (!btn) return;
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation(); // prevent card container events
+      const isExpanded = card.classList.toggle('expanded');
+      btn.setAttribute('aria-expanded', String(isExpanded));
+      
+      const svgIcon = btn.querySelector('svg');
+      btn.innerHTML = `${isExpanded ? 'Hide Details' : 'Show Details'} ${svgIcon ? svgIcon.outerHTML : ''}`;
+    });
+  });
 })();

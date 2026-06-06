@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Prajeen S — Electronics and Communication Engineering Student, Full Stack Developer, and Problem Solver. Explore my projects, skills, and certifications." />
+  <meta name="description"
+    content="Prajeen S — Electronics and Communication Engineering Student, Full Stack Developer, and Problem Solver. Explore my projects, skills, and certifications." />
   <meta name="keywords" content="Prajeen S, ECE Student, Full Stack Developer, MERN Stack, Portfolio" />
   <meta property="og:title" content="Prajeen S | ECE Student & Full Stack Developer" />
-  <meta property="og:description" content="Personal portfolio of Prajeen S — ECE Student, Full Stack Developer, Problem Solver." />
+  <meta property="og:description"
+    content="Personal portfolio of Prajeen S — ECE Student, Full Stack Developer, Problem Solver." />
   <title>Prajeen S | ECE Student & Full Stack Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- ───────────────── NAVBAR ───────────────── -->
@@ -33,8 +39,20 @@
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
       <div class="nav-actions">
+        <a href="assets/PRAJEEN RESUME.pdf" download="Prajeen_S_Resume.pdf" class="btn-resume"
+          id="nav-resume-btn" aria-label="Download Resume">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Resume
+        </a>
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
-          <span class="theme-icon" id="theme-icon">🌙</span>
+          <!-- Moon icon (shown in dark mode) -->
+          <svg class="theme-icon-svg" id="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          <!-- Sun icon (shown in light mode) -->
+          <svg class="theme-icon-svg" id="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         </button>
         <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -69,39 +87,67 @@
         <div class="hero-content" data-animate="fade-left">
           <div class="hero-badge">
             <span class="badge-dot"></span>
-            Available for Opportunities
+            Open to Work · Coimbatore | On-site · Hybrid · Remote
           </div>
           <h1 class="hero-name">Prajeen S</h1>
           <div class="hero-typewriter">
             <span id="typewriter-text"></span><span class="cursor-blink">|</span>
           </div>
           <p class="hero-bio">
-            Electronics and Communication Engineering student at Sri Eshwar College of Engineering,
-            building full-stack web applications, embedded systems, and data-driven solutions.
-            Passionate about engineering clean code and solving complex problems.
+            Full Stack Developer with a strong focus on backend systems, pursuing B.E. in Electronics &amp;
+            Communication Engineering at Sri Eshwar College of Engineering. Building scalable MERN stack applications,
+            autonomous robotics systems, and data-driven solutions.
           </p>
           <div class="hero-cta">
             <a href="#projects" class="btn btn-primary" id="view-projects-btn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
               View Projects
             </a>
+            <a href="assets/PRAJEEN RESUME.pdf" download="Prajeen_S_Resume.pdf"
+              class="btn btn-secondary btn-download" id="hero-resume-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download Resume
+            </a>
             <a href="#contact" class="btn btn-secondary" id="contact-btn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+              </svg>
               Get in Touch
             </a>
           </div>
           <div class="hero-socials">
-            <a href="https://github.com/PRAJEENS2024" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" id="hero-github">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            <a href="https://github.com/PRAJEENS2024" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="GitHub" id="hero-github">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
             </a>
-            <a href="https://www.linkedin.com/in/prajeen-s/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" id="hero-linkedin">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <a href="https://www.linkedin.com/in/prajeen-s/" target="_blank" rel="noopener noreferrer"
+              class="social-icon" aria-label="LinkedIn" id="hero-linkedin">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
             </a>
-            <a href="https://leetcode.com/u/PRAJEEN24/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LeetCode" id="hero-leetcode">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+            <a href="https://leetcode.com/u/PRAJEEN24/" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="LeetCode" id="hero-leetcode">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+              </svg>
             </a>
             <a href="mailto:prajeensenthilkumar.24@gmail.com" class="social-icon" aria-label="Email" id="hero-email">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+              </svg>
             </a>
           </div>
         </div>
@@ -110,7 +156,8 @@
           <div class="hero-image-ring"></div>
           <div class="hero-image-ring hero-image-ring-2"></div>
           <div class="hero-img-container">
-            <img src="assets/profile.jpg" alt="Prajeen S — ECE Student and Full Stack Developer" class="hero-img" id="hero-profile-img" />
+            <img src="assets/profile.jpg" alt="Prajeen S — ECE Student and Full Stack Developer" class="hero-img"
+              id="hero-profile-img" />
           </div>
           <div class="hero-float-badge badge-top">
             <span>🎓</span> B.E. ECE '28
@@ -119,7 +166,7 @@
             <span>⚡</span> MERN Stack
           </div>
           <div class="hero-float-badge badge-mid">
-            <span>🏆</span> 1955+ Problems
+            <span>🏆</span> 2000+ Problems Solved
           </div>
         </div>
       </div>
@@ -138,62 +185,29 @@
           <span class="section-tag">Who I Am</span>
           <h2 class="section-title">About Me</h2>
         </div>
-        <div class="about-grid">
-          <div class="about-text" data-animate="fade-up">
-            <p>
-              I'm <strong>Prajeen S</strong>, a second-year Electronics and Communication Engineering student at
-              <strong>Sri Eshwar College of Engineering</strong>, driven by a passion for software engineering
-              and building meaningful products.
-            </p>
-            <p>
-              While my academic roots are in ECE, I've channeled my focus into <strong>full-stack web development</strong>,
-              working with the MERN stack to build production-ready applications. My experience spans
-              from embedded systems and autonomous robotics to analytics dashboards and cloud-deployed APIs.
-            </p>
-            <p>
-              I approach every challenge as a <strong>problem solver</strong> — dissecting requirements,
-              designing scalable architectures, and shipping clean, maintainable code. I'm actively
-              competitive on coding platforms, with 400+ problems solved on LeetCode and 1555+ on SkillRack.
-            </p>
-            <div class="about-stats">
-              <div class="stat-item">
-                <span class="stat-value">400+</span>
-                <span class="stat-label">LeetCode Problems</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-value">1555+</span>
-                <span class="stat-label">SkillRack Problems</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-value">4</span>
-                <span class="stat-label">Live Projects</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-value">17+</span>
-                <span class="stat-label">Certifications</span>
-              </div>
+        <div class="about-centered" data-animate="fade-up">
+          <p class="about-bio-text">
+            I'm <strong>Prajeen S</strong> — a Full Stack Developer and ECE student at <strong>Sri Eshwar College of
+              Engineering</strong>, passionate about building scalable MERN stack applications and solving complex
+            problems. I completed a MERN internship at AlgoTutor Academy and actively compete on LeetCode (1598 rating)
+            and CodeChef (Diamond Streak).
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-value">400+</span>
+              <span class="stat-label">LeetCode Problems</span>
             </div>
-          </div>
-          <div class="about-highlights" data-animate="fade-up" style="--delay:0.15s">
-            <div class="highlight-card glass-card">
-              <div class="highlight-icon">💻</div>
-              <h3>Full Stack Development</h3>
-              <p>Building end-to-end applications with React, Node.js, Express, and MongoDB / PostgreSQL.</p>
+            <div class="stat-item">
+              <span class="stat-value">1555+</span>
+              <span class="stat-label">SkillRack Problems</span>
             </div>
-            <div class="highlight-card glass-card">
-              <div class="highlight-icon">🤖</div>
-              <h3>Embedded & Robotics</h3>
-              <p>Designing autonomous systems with Arduino, Raspberry Pi, ESP32, and LiDAR sensors.</p>
+            <div class="stat-item">
+              <span class="stat-value">500+</span>
+              <span class="stat-label">CodeChef Problems</span>
             </div>
-            <div class="highlight-card glass-card">
-              <div class="highlight-icon">🧠</div>
-              <h3>Problem Solving</h3>
-              <p>Consistently practicing DSA across LeetCode, SkillRack, CodeChef, and GeeksforGeeks.</p>
-            </div>
-            <div class="highlight-card glass-card">
-              <div class="highlight-icon">📊</div>
-              <h3>Data & Analytics</h3>
-              <p>Working with Power BI, Matplotlib, and Django REST Framework for data-driven solutions.</p>
+            <div class="stat-item">
+              <span class="stat-value">15+</span>
+              <span class="stat-label">Certifications</span>
             </div>
           </div>
         </div>
@@ -215,11 +229,11 @@
               <h3>Programming Languages</h3>
             </div>
             <div class="skill-tags">
-              <span class="skill-tag">C</span>
-              <span class="skill-tag">C++</span>
-              <span class="skill-tag">Java</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">JavaScript</span>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">C</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">C++</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">Java</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">Python</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">JavaScript</span></div>
             </div>
           </div>
 
@@ -229,10 +243,10 @@
               <h3>Web Technologies</h3>
             </div>
             <div class="skill-tags">
-              <span class="skill-tag">HTML5</span>
-              <span class="skill-tag">CSS3</span>
-              <span class="skill-tag">REST APIs</span>
-              <span class="skill-tag">JWT Auth</span>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">HTML5</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">CSS3</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.simpleicons.org/postman/FF6C37" alt="REST APIs" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">REST APIs</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.simpleicons.org/jsonwebtokens/white" alt="JWT Auth" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">JWT Auth</span></div>
             </div>
           </div>
 
@@ -242,11 +256,11 @@
               <h3>Frameworks</h3>
             </div>
             <div class="skill-tags">
-              <span class="skill-tag">React.js</span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Express.js</span>
-              <span class="skill-tag">Django REST</span>
-              <span class="skill-tag">PyQt5</span>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React.js" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">React.js</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">Node.js</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express.js" class="skill-logo" style="filter: invert(1);"><span class="skill-tag-name">Express.js</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django REST" class="skill-logo" style="filter: invert(1);"><span class="skill-tag-name">Django REST</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/qt/qt-original.svg" alt="PyQt5" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">PyQt5</span></div>
             </div>
           </div>
 
@@ -256,9 +270,9 @@
               <h3>Databases</h3>
             </div>
             <div class="skill-tags">
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">MongoDB</span>
-              <span class="skill-tag">SQL</span>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">PostgreSQL</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">MongoDB</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="SQL" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">SQL</span></div>
             </div>
           </div>
 
@@ -272,7 +286,7 @@
               <span class="skill-tag">OOP</span>
               <span class="skill-tag">DBMS</span>
               <span class="skill-tag">System Design</span>
-              <span class="skill-tag">Linux</span>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">Linux</span></div>
             </div>
           </div>
 
@@ -282,12 +296,12 @@
               <h3>Tools & Platforms</h3>
             </div>
             <div class="skill-tags">
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">GitHub</span>
-              <span class="skill-tag">VS Code</span>
-              <span class="skill-tag">Power BI</span>
-              <span class="skill-tag">Matplotlib</span>
-              <span class="skill-tag">MATLAB</span>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">Git</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="skill-logo" style="filter: invert(1);"><span class="skill-tag-name">GitHub</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">VS Code</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.simpleicons.org/powerbi/F2C811" alt="Power BI" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">Power BI</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">Matplotlib</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" alt="MATLAB" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">MATLAB</span></div>
             </div>
           </div>
 
@@ -297,9 +311,9 @@
               <h3>Embedded & Hardware</h3>
             </div>
             <div class="skill-tags">
-              <span class="skill-tag">Arduino</span>
-              <span class="skill-tag">Raspberry Pi</span>
-              <span class="skill-tag">ESP32</span>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg" alt="Arduino" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">Arduino</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-original.svg" alt="Raspberry Pi" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">Raspberry Pi</span></div>
+              <div class="skill-tag-container"><img src="https://cdn.simpleicons.org/espressif/E7352C" alt="ESP32" class="skill-logo" onerror="this.style.display='none'"><span class="skill-tag-name">ESP32</span></div>
               <span class="skill-tag">LiDAR</span>
             </div>
           </div>
@@ -331,7 +345,8 @@
             <ul class="exp-list">
               <li>Built a subscription tracking web application using MongoDB, Express, React, and Node.js.</li>
               <li>Integrated JWT-based authentication and secure REST APIs for protected routes.</li>
-              <li>Deployed the application and managed the complete development lifecycle from design to production.</li>
+              <li>Deployed the application and managed the complete development lifecycle from design to production.
+              </li>
             </ul>
             <div class="exp-tech">
               <span class="tech-chip">MongoDB</span>
@@ -377,6 +392,18 @@
               <span class="tech-chip chip-accent">ESP32</span>
               <span class="tech-chip chip-accent">LiDAR</span>
             </div>
+            <div class="project-links">
+
+              <a href="https://drive.google.com/drive/folders/1VHRDv438OSpD80zuJ6qJtFcEei22OVKl?usp=sharing"
+                class="project-link-btn link-resources" id="proj-rover-resources" target="_blank"
+                rel="noopener noreferrer" aria-label="Resources">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                </svg>
+                Resources
+              </a>
+            </div>
           </article>
 
           <article class="project-card glass-card" data-animate="fade-up" style="--delay:0.1s" id="project-warehouse">
@@ -400,6 +427,32 @@
               <span class="tech-chip chip-accent">Node.js</span>
               <span class="tech-chip chip-accent">Express</span>
               <span class="tech-chip chip-accent">MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link-btn link-github" id="proj-warehouse-github" target="_blank"
+                rel="noopener noreferrer" aria-label="GitHub Repository">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link-btn link-resources" id="proj-warehouse-resources" target="_blank"
+                rel="noopener noreferrer" aria-label="Resources">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                </svg>
+                Resources
+              </a>
+              <a href="#" class="project-link-btn link-demo" id="proj-warehouse-demo" target="_blank"
+                rel="noopener noreferrer" aria-label="Live Demo">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <polygon points="10 8 16 12 10 16 10 8" />
+                </svg>
+                Live Demo
+              </a>
             </div>
           </article>
 
@@ -425,6 +478,24 @@
               <span class="tech-chip chip-accent">Django REST</span>
               <span class="tech-chip chip-accent">PostgreSQL</span>
             </div>
+            <div class="project-links">
+              <a href="https://github.com/PRAJEENS2024/fossee-semester-intern-2026" class="project-link-btn link-github"
+                id="proj-chemsight-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+              </a>
+              <a href="https://chem-sight.netlify.app/" class="project-link-btn link-demo" id="proj-chemsight-demo"
+                target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <polygon points="10 8 16 12 10 16 10 8" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
           </article>
 
           <article class="project-card glass-card" data-animate="fade-up" style="--delay:0.3s" id="project-econexus">
@@ -447,6 +518,16 @@
               <span class="tech-chip chip-accent">Python</span>
               <span class="tech-chip chip-accent">SQL</span>
               <span class="tech-chip chip-accent">Backend Architecture</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/PRAJEENS2024/Eco_Nexus" class="project-link-btn link-github"
+                id="proj-econexus-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+              </a>
             </div>
           </article>
 
@@ -529,135 +610,109 @@
           <span class="section-tag">Competitive Programming</span>
           <h2 class="section-title">Coding Profiles</h2>
         </div>
-        <div class="coding-grid" data-animate="fade-up">
+        <div class="coding-flip-grid" data-animate="fade-up">
 
-          <div class="coding-card glass-card" id="coding-leetcode">
-            <div class="coding-card-top">
-              <div class="coding-logo leetcode-logo">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+          <!-- LeetCode -->
+          <div class="cp-card glass-card" id="coding-leetcode">
+            <div class="cp-face">
+              <div class="cp-logo-wrap">
+                <img src="assets/leetcode-icon.png" alt="LeetCode" class="cp-logo-img">
               </div>
-              <div class="coding-header-info">
-                <h3 class="coding-platform">LeetCode</h3>
-                <span class="coding-handle">PRAJEEN24</span>
-              </div>
-            </div>
-            <div class="coding-stats">
-              <div class="c-stat">
-                <span class="c-val">400+</span>
-                <span class="c-lbl">Problems Solved</span>
-              </div>
-              <div class="c-stat">
-                <span class="c-val">53</span>
-                <span class="c-lbl">Contests</span>
-              </div>
-              <div class="c-stat">
-                <span class="c-val">1598</span>
-                <span class="c-lbl">Max Rating</span>
+              <div class="cp-title-wrap">
+                <span class="cp-name">LeetCode</span>
+                <span class="cp-handle">PRAJEEN24</span>
               </div>
             </div>
-            <a href="https://leetcode.com/u/PRAJEEN24/" target="_blank" rel="noopener noreferrer" class="coding-link">
-              View Profile <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-            </a>
+            <div class="cp-details">
+              <div class="cp-stat-row">
+                <div class="cp-stat"><span class="cp-val">400+</span><span class="cp-lbl">PROBLEMS<br>SOLVED</span></div>
+                <div class="cp-stat"><span class="cp-val">53</span><span class="cp-lbl">CONTESTS</span></div>
+                <div class="cp-stat"><span class="cp-val">1,598</span><span class="cp-lbl">MAX RATING</span></div>
+              </div>
+              <a href="https://leetcode.com/u/PRAJEEN24/" target="_blank" rel="noopener noreferrer" class="cp-link">View Profile ↗</a>
+            </div>
           </div>
 
-          <div class="coding-card glass-card" id="coding-skillrack">
-            <div class="coding-card-top">
-              <div class="coding-logo skillrack-logo">SR</div>
-              <div class="coding-header-info">
-                <h3 class="coding-platform">SkillRack</h3>
-                <span class="coding-handle">Prajeen S</span>
+          <!-- SkillRack -->
+          <div class="cp-card glass-card" id="coding-skillrack">
+            <div class="cp-face">
+              <div class="cp-logo-wrap">
+                <img src="assets/skillrack-icon.png" alt="SkillRack" class="cp-logo-img">
+              </div>
+              <div class="cp-title-wrap">
+                <span class="cp-name">SkillRack</span>
+                <span class="cp-handle">Prajeen S</span>
               </div>
             </div>
-            <div class="coding-stats">
-              <div class="c-stat">
-                <span class="c-val">1555+</span>
-                <span class="c-lbl">Problems Solved</span>
+            <div class="cp-details">
+              <div class="cp-stat-row">
+                <div class="cp-stat"><span class="cp-val">1,555+</span><span class="cp-lbl">PROBLEMS<br>SOLVED</span></div>
+                <div class="cp-stat"><span class="cp-val">17</span><span class="cp-lbl">CERTIFICATES</span></div>
+                <div class="cp-stat"><span class="cp-val">525+</span><span class="cp-lbl">BRONZE<br>MEDALS</span></div>
               </div>
-              <div class="c-stat">
-                <span class="c-val">17</span>
-                <span class="c-lbl">Certificates</span>
-              </div>
-              <div class="c-stat">
-                <span class="c-val">525+</span>
-                <span class="c-lbl">Bronze Medals</span>
-              </div>
+              <a href="https://www.skillrack.com/faces/resume.xhtml?id=515303&key=3742f907d9a4a34167e0c70e8dfe04481e54470b" target="_blank" rel="noopener noreferrer" class="cp-link">View Profile ↗</a>
             </div>
-            <a href="https://www.skillrack.com/faces/resume.xhtml?id=515303&key=3742f907d9a4a34167e0c70e8dfe04481e54470b" target="_blank" rel="noopener noreferrer" class="coding-link">
-              View Profile <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-            </a>
           </div>
 
-          <div class="coding-card glass-card" id="coding-codechef">
-            <div class="coding-card-top">
-              <div class="coding-logo codechef-logo">CC</div>
-              <div class="coding-header-info">
-                <h3 class="coding-platform">CodeChef</h3>
-                <span class="coding-handle">prajeens</span>
+          <!-- CodeChef -->
+          <div class="cp-card glass-card" id="coding-codechef">
+            <div class="cp-face">
+              <div class="cp-logo-wrap">
+                <img src="assets/codechef-icon.png" alt="CodeChef" class="cp-logo-img">
+              </div>
+              <div class="cp-title-wrap">
+                <span class="cp-name">CodeChef</span>
+                <span class="cp-handle">prajeens</span>
               </div>
             </div>
-            <div class="coding-stats">
-              <div class="c-stat">
-                <span class="c-val">500+</span>
-                <span class="c-lbl">Problems Solved</span>
+            <div class="cp-details">
+              <div class="cp-stat-row">
+                <div class="cp-stat"><span class="cp-val">500+</span><span class="cp-lbl">PROBLEMS<br>SOLVED</span></div>
+                <div class="cp-stat"><span class="cp-val">14</span><span class="cp-lbl">CONTESTS</span></div>
+                <div class="cp-stat"><span class="cp-val">1,083</span><span class="cp-lbl">MAX RATING</span></div>
               </div>
-              <div class="c-stat">
-                <span class="c-val">14</span>
-                <span class="c-lbl">Contests</span>
-              </div>
-              <div class="c-stat">
-                <span class="c-val">1083</span>
-                <span class="c-lbl">Max Rating</span>
-              </div>
+              <a href="https://www.codechef.com/users/prajeens" target="_blank" rel="noopener noreferrer" class="cp-link">View Profile ↗</a>
             </div>
-            <a href="https://www.codechef.com/users/prajeens" target="_blank" rel="noopener noreferrer" class="coding-link">
-              View Profile <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-            </a>
           </div>
 
-          <div class="coding-card glass-card" id="coding-gfg">
-            <div class="coding-card-top">
-              <div class="coding-logo gfg-logo">GG</div>
-              <div class="coding-header-info">
-                <h3 class="coding-platform">GeeksforGeeks</h3>
-                <span class="coding-handle">prajeensenti9s7</span>
+          <!-- GeeksforGeeks -->
+          <div class="cp-card glass-card" id="coding-gfg">
+            <div class="cp-face">
+              <div class="cp-logo-wrap">
+                <img src="assets/geeksforgeeks-icon.png" alt="GeeksforGeeks" class="cp-logo-img">
+              </div>
+              <div class="cp-title-wrap">
+                <span class="cp-name">GeeksforGeeks</span>
+                <span class="cp-handle">prajeensenti9s7</span>
               </div>
             </div>
-            <div class="coding-stats">
-              <div class="c-stat">
-                <span class="c-val">100+</span>
-                <span class="c-lbl">Problems Solved</span>
+            <div class="cp-details">
+              <div class="cp-stat-row">
+                <div class="cp-stat"><span class="cp-val">100+</span><span class="cp-lbl">PROBLEMS<br>SOLVED</span></div>
+                <div class="cp-stat"><span class="cp-val">177</span><span class="cp-lbl">INSTITUTE<br>RANK</span></div>
               </div>
-              <div class="c-stat">
-                <span class="c-val">177</span>
-                <span class="c-lbl">Institute Rank</span>
-              </div>
+              <a href="https://www.geeksforgeeks.org/profile/prajeensenti9s7" target="_blank" rel="noopener noreferrer" class="cp-link">View Profile ↗</a>
             </div>
-            <a href="https://www.geeksforgeeks.org/profile/prajeensenti9s7" target="_blank" rel="noopener noreferrer" class="coding-link">
-              View Profile <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-            </a>
           </div>
 
-          <div class="coding-card glass-card" id="coding-hackerrank">
-            <div class="coding-card-top">
-              <div class="coding-logo hackerrank-logo">HR</div>
-              <div class="coding-header-info">
-                <h3 class="coding-platform">HackerRank</h3>
-                <span class="coding-handle">prajeensenthilk1</span>
+          <!-- HackerRank -->
+          <div class="cp-card glass-card" id="coding-hackerrank">
+            <div class="cp-face">
+              <div class="cp-logo-wrap">
+                <img src="assets/hackerrank-icon.png" alt="HackerRank" class="cp-logo-img">
+              </div>
+              <div class="cp-title-wrap">
+                <span class="cp-name">HackerRank</span>
+                <span class="cp-handle">prajeensenthilk1</span>
               </div>
             </div>
-            <div class="coding-stats">
-              <div class="c-stat">
-                <span class="c-val">✔</span>
-                <span class="c-lbl">SQL Certified</span>
+            <div class="cp-details">
+              <div class="cp-stat-row">
+                <div class="cp-stat"><span class="cp-val">✔</span><span class="cp-lbl">SQL CERTIFIED</span></div>
+                <div class="cp-stat"><span class="cp-val">✔</span><span class="cp-lbl">JAVA CERTIFIED</span></div>
               </div>
-              <div class="c-stat">
-                <span class="c-val">✔</span>
-                <span class="c-lbl">Java Certified</span>
-              </div>
+              <a href="https://www.hackerrank.com/profile/prajeensenthilk1" target="_blank" rel="noopener noreferrer" class="cp-link">View Profile ↗</a>
             </div>
-            <a href="https://www.hackerrank.com/profile/prajeensenthilk1" target="_blank" rel="noopener noreferrer" class="coding-link">
-              View Profile <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-            </a>
           </div>
 
         </div>
@@ -687,7 +742,7 @@
           <!-- NPTEL -->
           <div class="cert-card glass-card" data-category="nptel" id="cert-design-thinking">
             <div class="cert-issuer-badge nptel-badge">NPTEL</div>
-            <div class="cert-icon-large">🏅</div>
+            <div class="cert-icon-large" style="background:transparent; padding:0; width:64px; height:64px; display:flex; justify-content:center; align-items:center; border:none; box-shadow:none;"><img src="assets/NPTEL.jpeg" alt="NPTEL" class="cert-logo-img" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></div>
             <div class="cert-body">
               <h3>Design Thinking – A Primer</h3>
               <div class="cert-meta">
@@ -695,11 +750,12 @@
                 <span class="cert-year">2026</span>
               </div>
             </div>
+            <a href="#" class="cert-view-btn" target="_blank" rel="noopener noreferrer">View Certificate <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
 
           <div class="cert-card glass-card" data-category="nptel" id="cert-iot">
             <div class="cert-issuer-badge nptel-badge">NPTEL</div>
-            <div class="cert-icon-large">🏅</div>
+            <div class="cert-icon-large" style="background:transparent; padding:0; width:64px; height:64px; display:flex; justify-content:center; align-items:center; border:none; box-shadow:none;"><img src="assets/NPTEL.jpeg" alt="NPTEL" class="cert-logo-img" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></div>
             <div class="cert-body">
               <h3>Introduction to Internet of Things</h3>
               <div class="cert-meta">
@@ -707,189 +763,145 @@
                 <span class="cert-year">2025</span>
               </div>
             </div>
+            <a href="#" class="cert-view-btn" target="_blank" rel="noopener noreferrer">View Certificate <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
 
           <!-- Oracle -->
           <div class="cert-card glass-card" data-category="oracle" id="cert-oracle-java">
             <div class="cert-issuer-badge oracle-badge">Oracle</div>
-            <div class="cert-icon-large">☕</div>
+            <div class="cert-icon-large" style="background:transparent; padding:0; width:64px; height:64px; display:flex; justify-content:center; align-items:center; border:none; box-shadow:none;"><img src="assets/Oracle.jpeg" alt="Oracle" class="cert-logo-img" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></div>
             <div class="cert-body">
               <h3>Java Foundations</h3>
               <div class="cert-meta">
-                <span class="cert-badge cert-verified">Award of Completion</span>
                 <span class="cert-year">2026</span>
               </div>
             </div>
-          </div>
-
-          <div class="cert-card glass-card" data-category="oracle" id="cert-oracle-badge">
-            <div class="cert-issuer-badge oracle-badge">Oracle</div>
-            <div class="cert-icon-large">🔴</div>
-            <div class="cert-body">
-              <h3>Oracle Java Badge</h3>
-              <div class="cert-meta">
-                <span class="cert-badge cert-verified">Digital Badge</span>
-              </div>
-            </div>
+            <a href="#" class="cert-view-btn" target="_blank" rel="noopener noreferrer">View Certificate <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
 
           <!-- Red Hat -->
           <div class="cert-card glass-card" data-category="redhat" id="cert-redhat-linux">
             <div class="cert-issuer-badge redhat-badge">Red Hat</div>
-            <div class="cert-icon-large">🐧</div>
+            <div class="cert-icon-large" style="background:transparent; padding:0; width:64px; height:64px; display:flex; justify-content:center; align-items:center; border:none; box-shadow:none;"><img src="assets/Redhat.png" alt="Red Hat" class="cert-logo-img" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></div>
             <div class="cert-body">
               <h3>Getting Started with Linux Fundamentals</h3>
               <div class="cert-meta">
-                <span class="cert-badge cert-verified">Red Hat Academy</span>
                 <span class="cert-year">2026</span>
               </div>
             </div>
+            <a href="#" class="cert-view-btn" target="_blank" rel="noopener noreferrer">View Certificate <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
 
           <div class="cert-card glass-card" data-category="redhat" id="cert-redhat-sysadmin">
             <div class="cert-issuer-badge redhat-badge">Red Hat</div>
-            <div class="cert-icon-large">⚙️</div>
+            <div class="cert-icon-large" style="background:transparent; padding:0; width:64px; height:64px; display:flex; justify-content:center; align-items:center; border:none; box-shadow:none;"><img src="assets/Redhat.png" alt="Red Hat" class="cert-logo-img" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></div>
             <div class="cert-body">
               <h3>Red Hat System Administration I (RH124)</h3>
               <div class="cert-meta">
-                <span class="cert-badge cert-verified">Red Hat Academy</span>
                 <span class="cert-year">2025</span>
               </div>
             </div>
+            <a href="#" class="cert-view-btn" target="_blank" rel="noopener noreferrer">View Certificate <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
 
-          <!-- Udemy -->
-          <div class="cert-card glass-card" data-category="udemy" id="cert-mern">
+          <!-- Code Galatta -->
+          <div class="cert-card glass-card" data-category="other" id="cert-mern">
             <div class="cert-issuer-badge codegalatta-badge">Code Galatta</div>
-            <div class="cert-icon-large">📜</div>
+            <div class="cert-icon-large" style="background:transparent; padding:0; width:64px; height:64px; display:flex; justify-content:center; align-items:center; border:none; box-shadow:none;"><img src="assets/CodeGallata.svg" alt="Code Galatta" class="cert-logo-img" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></div>
             <div class="cert-body">
               <h3>MERN Stack Full Stack Development</h3>
               <div class="cert-meta">
                 <span class="cert-year">2025</span>
               </div>
             </div>
+            <a href="#" class="cert-view-btn" target="_blank" rel="noopener noreferrer">View Certificate <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
 
-          <div class="cert-card glass-card" data-category="udemy" id="cert-sql">
-            <div class="cert-issuer-badge udemy-badge">Udemy</div>
-            <div class="cert-icon-large">🗄️</div>
-            <div class="cert-body">
-              <h3>SQL for Beginners</h3>
-              <div class="cert-meta">
-                <span class="cert-year">2025</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="cert-card glass-card" data-category="udemy" id="cert-dsa">
-            <div class="cert-issuer-badge udemy-badge">Udemy</div>
-            <div class="cert-icon-large">🧮</div>
-            <div class="cert-body">
-              <h3>Mastering DSA using C & C++</h3>
-              <div class="cert-meta">
-                <span class="cert-year">2025</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Others -->
           <div class="cert-card glass-card" data-category="other" id="cert-basics">
             <div class="cert-issuer-badge codegalatta-badge">Code Galatta</div>
-            <div class="cert-icon-large">📜</div>
+            <div class="cert-icon-large" style="background:transparent; padding:0; width:64px; height:64px; display:flex; justify-content:center; align-items:center; border:none; box-shadow:none;"><img src="assets/CodeGallata.svg" alt="Code Galatta" class="cert-logo-img" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></div>
             <div class="cert-body">
               <h3>Basics of C, C++, Java and Python</h3>
               <div class="cert-meta">
                 <span class="cert-year">2024</span>
               </div>
             </div>
+            <a href="#" class="cert-view-btn" target="_blank" rel="noopener noreferrer">View Certificate <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
 
-          <div class="cert-card glass-card" data-category="other" id="cert-ml-python">
-            <div class="cert-issuer-badge fossee-badge">FOSSEE IIT</div>
-            <div class="cert-icon-large">🤖</div>
+          <!-- Udemy -->
+          <div class="cert-card glass-card" data-category="udemy" id="cert-sql">
+            <div class="cert-issuer-badge udemy-badge">Udemy</div>
+            <div class="cert-icon-large" style="background:transparent; padding:0; width:64px; height:64px; display:flex; justify-content:center; align-items:center; border:none; box-shadow:none;"><img src="assets/Udemy.png" alt="Udemy" class="cert-logo-img" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></div>
             <div class="cert-body">
-              <h3>Machine Learning Using Python</h3>
+              <h3>SQL for Beginners</h3>
               <div class="cert-meta">
-                <span class="cert-badge cert-verified">FOSSEE, IIT Bombay</span>
+                <span class="cert-year">2025</span>
               </div>
             </div>
+            <a href="#" class="cert-view-btn" target="_blank" rel="noopener noreferrer">View Certificate <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
 
-          <div class="cert-card glass-card" data-category="other" id="cert-matlab">
-            <div class="cert-issuer-badge fossee-badge">FOSSEE IIT</div>
-            <div class="cert-icon-large">📊</div>
+          <div class="cert-card glass-card" data-category="udemy" id="cert-dsa">
+            <div class="cert-issuer-badge udemy-badge">Udemy</div>
+            <div class="cert-icon-large" style="background:transparent; padding:0; width:64px; height:64px; display:flex; justify-content:center; align-items:center; border:none; box-shadow:none;"><img src="assets/Udemy.png" alt="Udemy" class="cert-logo-img" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></div>
             <div class="cert-body">
-              <h3>Introduction to MATLAB & SIMULINK</h3>
+              <h3>Mastering DSA using C & C++</h3>
               <div class="cert-meta">
-                <span class="cert-badge cert-verified">FOSSEE, IIT Bombay</span>
+                <span class="cert-year">2025</span>
               </div>
             </div>
+            <a href="#" class="cert-view-btn" target="_blank" rel="noopener noreferrer">View Certificate <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
 
-          <div class="cert-card glass-card" data-category="other" id="cert-embedded">
-            <div class="cert-issuer-badge fossee-badge">FOSSEE IIT</div>
-            <div class="cert-icon-large">🔌</div>
-            <div class="cert-body">
-              <h3>Embedded for Beginners</h3>
-              <div class="cert-meta">
-                <span class="cert-badge cert-verified">FOSSEE, IIT Bombay</span>
-              </div>
-            </div>
-          </div>
-
+          <!-- Others -->
           <div class="cert-card glass-card" data-category="other" id="cert-iit-c">
             <div class="cert-issuer-badge iit-badge">IIT Bombay</div>
-            <div class="cert-icon-large">⌨️</div>
+            <div class="cert-icon-large" style="background:transparent; padding:0; width:64px; height:64px; display:flex; justify-content:center; align-items:center; border:none; box-shadow:none;"><img src="assets/IIT Bombay.jpeg" alt="IIT Bombay" class="cert-logo-img" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></div>
             <div class="cert-body">
               <h3>C Programming Training</h3>
               <div class="cert-meta">
-                <span class="cert-badge cert-verified">IIT Bombay</span>
+                <span class="cert-year">2024</span>
               </div>
             </div>
+            <a href="#" class="cert-view-btn" target="_blank" rel="noopener noreferrer">View Certificate <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
 
           <div class="cert-card glass-card" data-category="other" id="cert-iit-cpp">
             <div class="cert-issuer-badge iit-badge">IIT Bombay</div>
-            <div class="cert-icon-large">⌨️</div>
+            <div class="cert-icon-large" style="background:transparent; padding:0; width:64px; height:64px; display:flex; justify-content:center; align-items:center; border:none; box-shadow:none;"><img src="assets/IIT Bombay.jpeg" alt="IIT Bombay" class="cert-logo-img" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></div>
             <div class="cert-body">
               <h3>C++ Programming Training</h3>
               <div class="cert-meta">
-                <span class="cert-badge cert-verified">IIT Bombay</span>
+                <span class="cert-year">2024</span>
               </div>
             </div>
+            <a href="#" class="cert-view-btn" target="_blank" rel="noopener noreferrer">View Certificate <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
 
           <div class="cert-card glass-card" data-category="other" id="cert-powerbi">
-            <div class="cert-issuer-badge other-badge">Microsoft</div>
-            <div class="cert-icon-large">📈</div>
+            <div class="cert-issuer-badge other-badge">Office Master</div>
+            <div class="cert-icon-large" style="background:transparent; padding:0; width:64px; height:64px; display:flex; justify-content:center; align-items:center; border:none; box-shadow:none;"><img src="assets/OffileMaster.jpg" alt="Microsoft" class="cert-logo-img" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></div>
             <div class="cert-body">
               <h3>Power BI Office Master</h3>
               <div class="cert-meta">
-                <span class="cert-badge cert-verified">Completed</span>
+                <span class="cert-year">2024</span>
               </div>
             </div>
+            <a href="#" class="cert-view-btn" target="_blank" rel="noopener noreferrer">View Certificate <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
 
-          <div class="cert-card glass-card" data-category="other" id="cert-gemini">
-            <div class="cert-issuer-badge google-badge">Google</div>
-            <div class="cert-icon-large">✨</div>
-            <div class="cert-body">
-              <h3>Gemini Certified Student</h3>
-              <div class="cert-meta">
-                <span class="cert-badge cert-verified">Google</span>
-              </div>
-            </div>
-          </div>
-
+          <!-- LinkedIn Learning -->
           <div class="cert-card glass-card" data-category="other" id="cert-linkedin-electronics">
             <div class="cert-issuer-badge linkedin-badge">LinkedIn</div>
-            <div class="cert-icon-large">🔋</div>
+            <div class="cert-icon-large" style="background:transparent; padding:0; width:64px; height:64px; display:flex; justify-content:center; align-items:center; border:none; box-shadow:none;"><img src="assets/linkedin-icon.png" alt="LinkedIn" class="cert-logo-img" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></div>
             <div class="cert-body">
               <h3>Electronics Foundations</h3>
               <div class="cert-meta">
-                <span class="cert-badge cert-verified">LinkedIn Learning</span>
+                <span class="cert-year">2026</span>
               </div>
             </div>
+            <a href="#" class="cert-view-btn" target="_blank" rel="noopener noreferrer">View Certificate <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           </div>
 
         </div>
@@ -901,85 +913,133 @@
       <div class="container">
         <div class="section-header" data-animate="fade-up">
           <span class="section-tag">Recognition</span>
-          <h2 class="section-title">Achievements</h2>
+          <h2 class="section-title">My Journey</h2>
         </div>
-        <div class="achievements-list" data-animate="fade-up">
+        <div class="ach-timeline" data-animate="fade-up">
 
-          <div class="achievement-item glass-card" id="ach-mini-expo">
-            <div class="ach-icon">🥉</div>
-            <div class="ach-content">
-              <h3>Third Prize — Mini Project Expo 2026</h3>
-              <p>Awarded third place at the college Mini Project Expo for outstanding project demonstration.</p>
+          <div class="ach-timeline-item" data-animate="fade-left">
+            <div class="ach-timeline-node">🏆</div>
+            <div class="ach-timeline-card glass-card" id="ach-codelee">
+              <div class="ach-img-frame">
+                <img src="assets/CodeLee_Sem 1.jpeg" alt="CodeLee Semester 1" class="ach-img" onerror="this.closest('.ach-img-frame').classList.add('ach-img-missing')">
+              </div>
+              <div class="ach-info">
+                <div class="ach-meta">
+                  <span class="ach-badge">📊 Top Performer</span>
+                  <span class="ach-info-year">2025</span>
+                </div>
+                <h3>CodeLee — Semester 1 Top Performer</h3>
+                <p>Recognized as a top performer in CodeLee Semester 1 competitive programming rankings.</p>
+              </div>
             </div>
-            <span class="ach-year">2026</span>
           </div>
 
-          <div class="achievement-item glass-card" id="ach-caterpillar">
-            <div class="ach-icon">🏆</div>
-            <div class="ach-content">
-              <h3>Semi-Finals — Caterpillar Autonomy Challenge</h3>
-              <p>Shortlisted for the semi-finals in Caterpillar's prestigious autonomy challenge, two consecutive years.</p>
+          <div class="ach-timeline-item" data-animate="fade-right">
+            <div class="ach-timeline-node">🏆</div>
+            <div class="ach-timeline-card glass-card" id="ach-cac2025">
+              <div class="ach-img-frame">
+                <img src="assets/CAC 2025.jpeg" alt="Caterpillar Autonomy Challenge 2025" class="ach-img" onerror="this.closest('.ach-img-frame').classList.add('ach-img-missing')">
+              </div>
+              <div class="ach-info">
+                <div class="ach-meta">
+                  <span class="ach-badge">🚜 Semi-Finals</span>
+                  <span class="ach-info-year">2025</span>
+                </div>
+                <h3>Semi-Finals — Caterpillar Autonomy Challenge 2025</h3>
+                <p>Reached the semi-finals of the Caterpillar Autonomy Challenge 2025 by building innovative autonomous solutions.</p>
+              </div>
             </div>
-            <span class="ach-year">2024 & 2025</span>
           </div>
 
-          <div class="achievement-item glass-card" id="ach-freshathon">
-            <div class="ach-icon">🥈</div>
-            <div class="ach-content">
-              <h3>2nd Runner Up — Freshathon 2025</h3>
-              <p>Secured 2nd Runner Up position at Freshathon 2025 hackathon.</p>
+          <div class="ach-timeline-item" data-animate="fade-left">
+            <div class="ach-timeline-node">🏆</div>
+            <div class="ach-timeline-card glass-card" id="ach-codelee-sem2">
+              <div class="ach-img-frame">
+                <img src="assets/CodeLee_Sem 2.jpeg" alt="CodeLee Semester 2" class="ach-img" onerror="this.closest('.ach-img-frame').classList.add('ach-img-missing')">
+              </div>
+              <div class="ach-info">
+                <div class="ach-meta">
+                  <span class="ach-badge">📊 Top Performer</span>
+                  <span class="ach-info-year">2025</span>
+                </div>
+                <h3>CodeLee — Semester 2 Top Performer</h3>
+                <p>Recognized as a top performer in CodeLee Semester 2 competitive programming rankings.</p>
+              </div>
             </div>
-            <span class="ach-year">2025</span>
           </div>
 
-          <div class="achievement-item glass-card" id="ach-sicpc">
-            <div class="ach-icon">🏅</div>
-            <div class="ach-content">
-              <h3>Shortlisted — SICPC Continental Round 2025</h3>
-              <p>Selected for the continental round of the SICPC competitive programming contest.</p>
+          <div class="ach-timeline-item" data-animate="fade-right">
+            <div class="ach-timeline-node">🏆</div>
+            <div class="ach-timeline-card glass-card" id="ach-freshathon">
+              <div class="ach-img-frame">
+                <img src="assets/Freshathon.jpeg" alt="Freshathon 2025" class="ach-img" onerror="this.closest('.ach-img-frame').classList.add('ach-img-missing')">
+              </div>
+              <div class="ach-info">
+                <div class="ach-meta">
+                  <span class="ach-badge">🥉 Third Prize</span>
+                  <span class="ach-info-year">2025</span>
+                </div>
+                <h3>Third Prize — Freshathon 2025</h3>
+                <p>Secured Third Prize at Freshathon 2025 — the inter-college hackathon at Sri Eshwar College.</p>
+              </div>
             </div>
-            <span class="ach-year">2025</span>
           </div>
 
-          <div class="achievement-item glass-card" id="ach-sap">
-            <div class="ach-icon">🏅</div>
-            <div class="ach-content">
-              <h3>Shortlisted — SAP Hackfest Regional Round 2025</h3>
-              <p>Shortlisted for the regional round of SAP Hackfest 2025.</p>
+          <div class="ach-timeline-item" data-animate="fade-left">
+            <div class="ach-timeline-node">🏆</div>
+            <div class="ach-timeline-card glass-card" id="ach-sap">
+              <div class="ach-img-frame">
+                <img src="assets/SAP.jpeg" alt="SAP Hackfest 2025" class="ach-img" onerror="this.closest('.ach-img-frame').classList.add('ach-img-missing')">
+              </div>
+              <div class="ach-info">
+                <div class="ach-meta">
+                  <span class="ach-badge">🏅 Regional Round</span>
+                  <span class="ach-info-year">2025</span>
+                </div>
+                <h3>Shortlisted — SAP Hackfest Regional Round 2025</h3>
+                <p>Shortlisted for the regional round of SAP Hackfest 2025.</p>
+              </div>
             </div>
-            <span class="ach-year">2025</span>
           </div>
 
-          <div class="achievement-item glass-card" id="ach-tata">
-            <div class="ach-icon">🎯</div>
-            <div class="ach-content">
-              <h3>Tata Crucible Campus Quiz</h3>
-              <p>Participated and performed in Tata Crucible, one of India's largest business quiz competitions.</p>
+          <div class="ach-timeline-item" data-animate="fade-right">
+            <div class="ach-timeline-node">🏆</div>
+            <div class="ach-timeline-card glass-card" id="ach-cac2026">
+              <div class="ach-img-frame">
+                <img src="assets/CAC 2026.jpeg" alt="Caterpillar Autonomy Challenge 2026" class="ach-img" onerror="this.closest('.ach-img-frame').classList.add('ach-img-missing')">
+              </div>
+              <div class="ach-info">
+                <div class="ach-meta">
+                  <span class="ach-badge">🚜 Semi-Finals</span>
+                  <span class="ach-info-year">2026</span>
+                </div>
+                <h3>Semi-Finals — Caterpillar Autonomy Challenge 2026</h3>
+                <p>Reached the semi-finals of the Caterpillar Autonomy Challenge 2026 with advanced autonomous systems.</p>
+              </div>
             </div>
-            <span class="ach-year">2025</span>
           </div>
 
-          <div class="achievement-item glass-card" id="ach-adobe">
-            <div class="ach-icon">🎨</div>
-            <div class="ach-content">
-              <h3>Adobe India Hackathon</h3>
-              <p>Participated in Adobe India Hackathon, solving creative and technical challenges.</p>
+          <div class="ach-timeline-item" data-animate="fade-left">
+            <div class="ach-timeline-node">🏆</div>
+            <div class="ach-timeline-card glass-card" id="ach-mini-expo">
+              <div class="ach-img-frame">
+                <img src="assets/MiniProjectExpo.jpg" alt="Mini Project Expo 2026" class="ach-img" onerror="this.closest('.ach-img-frame').classList.add('ach-img-missing')">
+              </div>
+              <div class="ach-info">
+                <div class="ach-meta">
+                  <span class="ach-badge">🥉 3rd Prize</span>
+                  <span class="ach-info-year">2026</span>
+                </div>
+                <h3>Third Prize — Mini Project Expo 2026</h3>
+                <p>Awarded third place at Sri Eshwar College of Engineering Mini Project Expo for outstanding project demonstration.</p>
+              </div>
             </div>
-            <span class="ach-year">2025</span>
-          </div>
-
-          <div class="achievement-item glass-card" id="ach-hp">
-            <div class="ach-icon">💡</div>
-            <div class="ach-content">
-              <h3>HP Power Lab 2.0</h3>
-              <p>Selected for HP Power Lab 2.0 — an intensive tech innovation program by HP India.</p>
-            </div>
-            <span class="ach-year">2025</span>
           </div>
 
         </div>
       </div>
     </section>
+
 
     <!-- ───────────────── CONTACT ───────────────── -->
     <section class="section" id="contact">
@@ -987,37 +1047,32 @@
         <div class="section-header" data-animate="fade-up">
           <span class="section-tag">Let's Connect</span>
           <h2 class="section-title">Get In Touch</h2>
-          <p class="section-subtitle">I'm open to internship opportunities, collaborative projects, and interesting conversations. Drop a message!</p>
+          <p class="section-subtitle">I'm open to internship opportunities, collaborative projects, and interesting
+            conversations. Drop a message!</p>
         </div>
         <div class="contact-grid" data-animate="fade-up">
           <a href="mailto:prajeensenthilkumar.24@gmail.com" class="contact-card glass-card" id="contact-email">
-            <div class="contact-icon-wrap">
-              <div class="contact-icon">📧</div>
-            </div>
+            <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email" class="contact-logo-img">
             <h3>Email</h3>
             <span>prajeensenthilkumar.24@gmail.com</span>
             <div class="contact-arrow">→</div>
           </a>
           <a href="tel:+918807951717" class="contact-card glass-card" id="contact-phone">
-            <div class="contact-icon-wrap">
-              <div class="contact-icon">📞</div>
-            </div>
+            <img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="Phone" class="contact-logo-img">
             <h3>Phone</h3>
             <span>+91 8807951717</span>
             <div class="contact-arrow">→</div>
           </a>
-          <a href="https://www.linkedin.com/in/prajeen-s/" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" id="contact-linkedin">
-            <div class="contact-icon-wrap">
-              <div class="contact-icon">💼</div>
-            </div>
+          <a href="https://www.linkedin.com/in/prajeen-s/" target="_blank" rel="noopener noreferrer"
+            class="contact-card glass-card" id="contact-linkedin">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="contact-logo-img">
             <h3>LinkedIn</h3>
             <span>prajeen-s</span>
             <div class="contact-arrow">→</div>
           </a>
-          <a href="https://github.com/PRAJEENS2024" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" id="contact-github">
-            <div class="contact-icon-wrap">
-              <div class="contact-icon">🐙</div>
-            </div>
+          <a href="https://github.com/PRAJEENS2024" target="_blank" rel="noopener noreferrer"
+            class="contact-card glass-card" id="contact-github">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="contact-logo-img" style="filter: invert(1);">
             <h3>GitHub</h3>
             <span>PRAJEENS2024</span>
             <div class="contact-arrow">→</div>
@@ -1035,14 +1090,26 @@
         <p>ECE Student · Full Stack Developer · Problem Solver</p>
       </div>
       <div class="footer-socials">
-        <a href="https://github.com/PRAJEENS2024" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer-social-link" id="footer-github">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        <a href="https://github.com/PRAJEENS2024" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+          class="footer-social-link" id="footer-github">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+          </svg>
         </a>
-        <a href="https://www.linkedin.com/in/prajeen-s/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-link" id="footer-linkedin">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <a href="https://www.linkedin.com/in/prajeen-s/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+          class="footer-social-link" id="footer-linkedin">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
         </a>
-        <a href="mailto:prajeensenthilkumar.24@gmail.com" aria-label="Email" class="footer-social-link" id="footer-email">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        <a href="mailto:prajeensenthilkumar.24@gmail.com" aria-label="Email" class="footer-social-link"
+          id="footer-email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+          </svg>
         </a>
       </div>
       <p class="footer-copy">© 2026 Prajeen S. All rights reserved.</p>
@@ -1051,4 +1118,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
